@@ -34,8 +34,8 @@ const WhatGPT3 = () => {
         <p>Explore The Library</p>
       </div>
       <div className="gpt3__whatgpt3-container">
-        {featuresData.splice(1, 3).map((data) => (
-          <Feature title={data.title} text={data.text} />
+        {featuresData.splice(1, 3).map((data, index) => (
+          <Feature title={data.title} text={data.text} key={index} />
         ))}
       </div>
     </div>
